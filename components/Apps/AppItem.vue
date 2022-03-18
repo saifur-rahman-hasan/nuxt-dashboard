@@ -40,6 +40,5 @@ export default {
 }
 .v-card:not(.on-hover) {
 	transition: all 0.2s ease-in-out;
-	cursor: pointer;
 }
 </style>

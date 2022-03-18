@@ -4,8 +4,11 @@ import authConfig from './config/authConfig'
 import axiosConfig from './config/axiosConfig'
 import buildConfig from './config/buildConfig'
 import routerConfig from './config/routerConfig'
+const env = require('dotenv').config();
 
 export default {
+	env: env.parsed,
+
 	loading: { color: '#ff5252', height: '3px' },
 
 	// Global page headers: https://go.nuxtjs.dev/config-head
@@ -24,8 +27,12 @@ export default {
 	buildModules: [
 		// https://go.nuxtjs.dev/eslint
 		'@nuxtjs/eslint-module',
+
 		// https://go.nuxtjs.dev/vuetify
 		'@nuxtjs/vuetify',
+
+		// https://github.com/nuxt-community/dotenv-module
+		'@nuxtjs/dotenv',
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules

@@ -1,4 +1,4 @@
-const JWT_AUTH_BASE_URL = 'http://laravel-jwt-auth.test'
+const JWT_AUTH_BASE_URL = process.env.AUTH_API_URL
 
 export default {
 	redirect: {

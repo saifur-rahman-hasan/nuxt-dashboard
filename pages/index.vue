@@ -2,6 +2,7 @@
 	<div>
 		<h1 class="display-1 font-weight-light">
 			Welcome, {{ auth.user.name }}
+			<br>
 		</h1>
 	</div>
 </template>

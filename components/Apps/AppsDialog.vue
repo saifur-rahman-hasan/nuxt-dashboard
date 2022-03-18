@@ -33,7 +33,7 @@
 				<v-container class="mt-10">
 					<v-row justify="center">
 						<v-col v-for="app in apps" :key="app.id" cols="auto">
-							<AppItem :app="app" />
+							<AppItem :app="app" @app-clicked="bootApp" />
 						</v-col>
 					</v-row>
 				</v-container>
@@ -54,6 +54,15 @@ export default {
 		searchQuery: '',
 		apps: APPS,
 	}),
+
+	methods: {
+		bootApp(app){
+			if(!app.route){ return false; }
+
+			this.showAppsDialog = false
+			this.$router.push(app.route)
+		}
+	}
 }
 </script>
 

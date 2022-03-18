@@ -9,11 +9,11 @@ const APPS = [
 	},
 	{
 		id: 2,
-		name: 'Address Book',
-		slug: 'address-book',
-		route: '/app/address-book',
+		name: 'Contacts',
+		slug: 'contacts',
+		route: '/app/contacts',
 		notificationCount: 0,
-		icon: '/app.address-book.png',
+		icon: '/app.contacts.png',
 	},
 	{
 		id: 3,

@@ -7,6 +7,7 @@
 			class="mb-1"
 			:elevation="hover ? 5 : 0"
 			:class="{ 'on-hover': hover }"
+			@click="$emit('app-clicked', app)"
 		>
 			<v-card-text class="text-center">
 				<v-avatar rounded="0" size="100">
@@ -30,7 +31,7 @@ export default {
 			type: Object,
 			required: true,
 		},
-	},
+	}
 }
 </script>
 
